@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="icon" type="image/png" href="../Formulario completito/favicon.png">
+	<title>Formulario completito - Alfonso López López</title>
+</head>
+<body>
+	<nav id="menu">
+
+<ul>
+ <li><a href="../../index.html">Indice</a></li>
+
+<li><a href="#">Formulario</a>
+ 	<ul>
+ 		<li><a href="Ejercicios Formularios/Formulario Completito/Formulario_Completito.html">Formulario Completito</a></li>
+ 		<li><a href="../Formulario DNI/Formulario_DNI.html">Formulario DNI</a></li>
+ 		<li><a href="../Formulario Refinitivo/Formulario_Refinitivo.html">Formulario Refinitivo</a></li>
+ 		<li><a href="../Formulario_Primero/Formulario_Primero.html">Formulario Primero</a></li>
+ 	</ul>
+ </li>
+
+
+ <li><a href="../../Tablas/Tablas.html">Tablas</a>
+ 	<ul>
+ 		<li><a href="../../Tablas/Tablas.html#tabla1">Tabla Actividades</a></li>
+ 		<li><a href="../../Tablas/Tablas.html#tabla2">Tabla Buenas prácticas. br vs celdas</a></li>
+ 		<li><a href="../../Tablas/Tablas.html#tabla3">Tabla con columnas agrupadas</a></li>
+ 		<li><a href="../../Tablas/Tablas.html#tabla4">Tabla Conciertos</a></li>
+ 		<li><a href="../../Tablas/Tablas.html#tabla5">Tabla de ropa</a></li>
+		<li><a href="../../Tablas/Tablas.html#tabla6">Tabla delivery slots</a></li>
+		<li><a href="../../Tablas/Tablas.html#tabla7">Tabla Holidays</a></li>
+ 		<li><a href="../../Tablas/Tablas.html#tabla8">Tabla Poster name.Filas agrupadas</a></li>
+ 		<li><a href="../../Tablas/Tablas.html#tabla9">Tabla Tedy bear collectors</a></li>
+ 	</ul>
+ </li>
+
+ <li><a href="#">Listado variado</a>
+ 	<ul>
+ 		<li><a href="../../listado variado/mapa/mapa.html">Mapa</a></li>
+ 		<li><a href="../../listado variado/podscast radio/podscast radio.html">Podscast radio</a></li>
+ 		<li><a href="../../listado variado/video/video.html">Video</a></li>
+ 		<li><a href="../../listado variado/canvas.html">Canvas</a></li>
+ 	</ul>	
+ </li>
+ <li><a href="../../CSS/CCS tutorial.html">Tutorial CSS</a></li>
+</ul>
+
+
+
+</nav>
+<p><strong>A continuación se realizará el siguente formulario que se muestra en la imagen</strong></p>
+<br/>
+<img src="../formulario completito/formulario_completito.png">
+<br/>
+<table border="1" cellpadding="2" cellpadding="0">
+	<tr>
+		<th scope="col">Etiqueta</th>
+		<th scope="col">Descipción</th>
+	</tr>
+	<tr>
+		<th scope="col">&nbsp;</th>
+		<th scope="col">&nbsp;</th>
+	</tr>
+	<tr>
+		<th scope="col">Form</th>
+		<th scope="col">Se emplea para insertar un formulario en una página</th>
+	</tr>
+	<tr>
+		<th scope="col">Fieldset</th>
+		<th scope="col">Se emplea paraagrupar de forma lógica varios campos de un formulario</th>
+	</tr>
+	<tr>
+		<th scope="col">Input</th>
+		<th scope="col">Se emplea para insertar un control en un formulario</th>
+	</tr>
+	<tr>
+		<th scope="col">Input type="range"</th>
+		<th scope="col">Se utiliza para seleccionar un número con un cursor</th>
+	</tr>
+	<tr>
+		<th scope="col">Input type="number"</th>
+		<th scope="col">Este campo se utiliza para escribir un número entero</th>
+	</tr>
+	<tr>
+		<th scope="col">Input step="1"</th>
+		<th scope="col">Es el desplazamiento. Si especificas un «step» de 1, el campo solo aceptará valores de 1 en 1</th>
+	</tr>
+	<tr>
+		<th scope="col">Input placeholder="hola"</th>
+		<th scope="col">Especifica un indicador en el campo mediante</th>
+	</tr>
+	<tr>
+		<th scope="col">Input color</th>
+		<th scope="col">Indica el valor del color</th>
+	</tr>
+	<tr>
+		<th scope="col">Date</th>
+		<th scope="col">Expresa la fecha</th>
+	</tr>
+	<tr>
+		<th scope="col">Time</th>
+		<th scope="col">Expresa la hora</th>
+	</tr>
+	<tr>
+		<th scope="col">Week</th>
+		<th scope="col">Expresa la semana</th>
+	</tr>
+	<tr>
+		<th scope="col">Month</th>
+		<th scope="col">Expresa el mes</th>
+	</tr>
+	
+</table>
+
+<br/>
+
+<form action="/php/insertar_cv.php" method="post" enctype="multipart/form-data">
+<fieldset>
+	Name: <input type="fille" name="Name">
+	<br/><br/>
+	Email: <input type="fille" name="Email">
+	<br/><br/>
+	URL: <input type="text" name="username" id="username" placeholder="Write the url of your" size="20"  >
+	<br/><br/> 
+	Date: <input type="Date" name="Date" value="">
+	<br/><br/>
+	Time: <input type="Time" name="Time" value="">
+	<br/><br/>
+	Date and time of birth: <input type="Date" name="Date" value=""> <input type="Time" name="Time" value=""> 
+	<br/><br/>
+	Month: <input type="Month" name="Month">
+	<br/><br/>
+	Week: <input type="Week" name="Week">
+	<br/><br/>
+	Number (min-10, max10): <input type="Number" name="" min="-10" max="10" step="1" value="0">
+	<br/><br/>
+	Range (min0, max10): <input type="Range" name="" min="0" max="10" step="1" value="0" >
+	<br/><br/>
+	Telephone: <input type="Telephone" name="Telephone" value="">
+	<br/><br/>
+	Seach term:<input type="Seach" name="Seach" value="">
+	<br/><br>
+	Favourite colour: <input type="color" name="" value="#ff000">
+	<br/><br/>
+	<input type="submit" name="submit" value="submit">
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+<br>
+<br>
+<table >
+	<td><a href="../../Ejercicios14-15-16/Ejercicio16.html">Anterior</a></td>
+	<td><a href="../Ejercicios de 1-16/Ejercicio1.html">Inicio</a></td>
+	<td><a href="../Formulario DNI/Formulario_DNI.html">Siguiente</a></td>
+</table>
+
+
+
+
+
+
+</fieldset>
+	
+</form>
+</body>
+</html>

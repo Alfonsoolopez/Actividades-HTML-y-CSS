@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="estilo.css">
+	<link rel="icon" type="image/png" href="../Formulario DNI/favicon.png">
+	<title>Formulario con DNI - Alfonso López López</title>
+</head>
+<body>
+<nav id="menu">
+
+<ul>
+ <li><a href="../../index.html">Indice</a></li>
+
+<li><a href="#">Formulario</a>
+ 	<ul>
+ 		<li><a href="../Formulario Completito/Formulario_Completito.html">Formulario Completito</a></li>
+ 		<li><a href="Formulario DNI/Formulario_DNI.html">Formulario DNI</a></li>
+ 		<li><a href="../Formulario Refinitivo/Formulario_Refinitivo.html">Formulario Refinitivo</a></li>
+ 		<li><a href="../Formulario_Primero/Formulario_Primero.html">Formulario Primero</a></li>
+ 	</ul>
+ </li>
+
+
+ <li><a href="../../Tablas/Tablas.html">Tablas</a>
+ 	<ul>
+ 		<li><a href="../../Tablas/Tablas.html#tabla1">Tabla Actividades</a></li>
+ 		<li><a href="../../Tablas/Tablas.html#tabla2">Tabla Buenas prácticas. br vs celdas</a></li>
+ 		<li><a href="../../Tablas/Tablas.html#tabla3">Tabla con columnas agrupadas</a></li>
+ 		<li><a href="../../Tablas/Tablas.html#tabla4">Tabla Conciertos</a></li>
+ 		<li><a href="../../Tablas/Tablas.html#tabla5">Tabla de ropa</a></li>
+		<li><a href="../../Tablas/Tablas.html#tabla6">Tabla delivery slots</a></li>
+		<li><a href="../../Tablas/Tablas.html#tabla7">Tabla Holidays</a></li>
+ 		<li><a href="../../Tablas/Tablas.html#tabla8">Tabla Poster name.Filas agrupadas</a></li>
+ 		<li><a href="../../Tablas/Tablas.html#tabla9">Tabla Tedy bear collectors</a></li>
+ 	</ul>
+ </li>
+
+ <li><a href="#">Listado variado</a>
+ 	<ul>
+ 		<li><a href="listado variado/mapa/mapa.html">Mapa</a></li>
+ 		<li><a href="listado variado/podscast radio/podscast radio.html">Podscast radio</a></li>
+ 		<li><a href="listado variado/video/video.html">Video</a></li>
+ 		<li><a href="listado variado/canvas.html">Canvas</a></li>
+ 	</ul>	
+ </li>
+ <li><a href="CSS/CCS tutorial.html">Tutorial CSS</a></li>
+</ul>
+
+
+
+</nav>
+<p><strong>Crea un formulario que solicite nombre, apellidos y dni del usuario. Comprueba esta última entrada mediante expresiones regulares. DNI válidos: 12345678Z, 12345678z, 12345678 Z, 12345678-Z. DNI inválidos: 1234567z, 12345678</strong></p>
+<br/>
+<table border="1" cellpadding="2" cellpadding="0">
+	<tr>
+		<th scope="col">Etiqueta</th>
+		<th scope="col">Descipción</th>
+	</tr>
+	<tr>
+		<th scope="col">&nbsp;</th>
+		<th scope="col">&nbsp;</th>
+	</tr>
+	<tr>
+		<th scope="col">Form</th>
+		<th scope="col">Se emplea para insertar un formulario en una página</th>
+	</tr>
+	<tr>
+		<th scope="col">Fieldset</th>
+		<th scope="col">Se emplea paraagrupar de forma lógica varios campos de un formulario</th>
+	</tr>
+	<tr>
+		<th scope="col">Input</th>
+		<th scope="col">Se emplea para insertar un control en un formulario</th>
+	</tr>
+	<tr>
+		<th scope="col">Input placeholder="hola"</th>
+		<th scope="col">Especifica un indicador en el campo mediante</th>
+
+	</tr>
+	
+</table>
+
+<form>
+
+<fieldset>
+	Nombre: <input type="text" name="username" id="username" placeholder="Introduce tu Nombre" size="20" max="30" >
+	<br/><br/>
+	Apellidos: <input type="text" name="username" id="username" placeholder="Introduce tus Apellidos" size="20" max="50">	
+	<br/><br/>
+	DNI: <input type="text" name="dni" id="dni" placeholder="Introduce tu DNI " pattern="\d{8}[ -]?[A-Za-z]" required/>
+
+
+</fieldset>
+
+</form>
+<br>
+<br>
+
+<table >
+	<td><a href="../Formulario Completito/Formulario_Completito.html">Anterior</a></td>
+	<td><a href="../Ejercicios de 1-16/Ejercicio1.html">Inicio</a></td>
+	<td><a href="../Formulario Refinitivo/Formulario_Refinitivo.html">Siguiente</a></td>
+</table>
+
+
+
+</body>
+</html>

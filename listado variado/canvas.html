@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <link rel="stylesheet" href="estilo.css">
+	<title>Canvas básico - Alfonso López López</title>
+</head>
+<body>
+   <nav id="menu">
+
+<ul>
+ <li><a href="../../index.html">Indice</a></li>
+
+<li><a href="#">Formulario</a>
+  <ul>
+    <li><a href="../../Ejercicios Formularios/Formulario Completito/Formulario_Completito.html">Formulario Completito</a></li>
+    <li><a href="../../Ejercicios FormulariosFormulario DNI/Formulario_DNI.html">Formulario DNI</a></li>
+    <li><a href="../../Ejercicios FormulariosFormulario Refinitivo/Formulario_Refinitivo.html">Formulario Refinitivo</a></li>
+    <li><a href="../../Ejercicios FormulariosFormulario_Primero/Formulario_Primero.html">Formulario Primero</a></li>
+  </ul>
+ </li>
+
+
+ <li><a href="../../Tablas/Tablas.html">Tablas</a>
+  <ul>
+    <li><a href="../../Tablas/Tablas.html#tabla1">Tabla Actividades</a></li>
+    <li><a href="../../Tablas/Tablas.html#tabla2">Tabla Buenas prácticas. br vs celdas</a></li>
+    <li><a href="../../Tablas/Tablas.html#tabla3">Tabla con columnas agrupadas</a></li>
+    <li><a href="../../Tablas/Tablas.html#tabla4">Tabla Conciertos</a></li>
+    <li><a href="../../Tablas/Tablas.html#tabla5">Tabla de ropa</a></li>
+    <li><a href="../../Tablas/Tablas.html#tabla6">Tabla delivery slots</a></li>
+    <li><a href="../../Tablas/Tablas.html#tabla7">Tabla Holidays</a></li>
+    <li><a href="../../Tablas/Tablas.html#tabla8">Tabla Poster name.Filas agrupadas</a></li>
+    <li><a href="../../Tablas/Tablas.html#tabla9">Tabla Tedy bear collectors</a></li>
+  </ul>
+ </li>
+
+ <li><a href="#">Listado variado</a>
+  <ul>
+    <li><a href="../../listado variado/mapa/mapa.html">Mapa</a></li>
+    <li><a href="../../listado variado/podscast radio/podscast radio.html">Podscast radio</a></li>
+    <li><a href="../../listado variado/video/video.html">Video</a></li>
+    <li><a href="listado variado/canvas.html">Canvas</a></li>
+  </ul> 
+ </li>
+ <li><a href="../../CSS/CCS tutorial.html">Tutorial CSS</a></li>
+</ul>
+
+
+
+</nav>
+<h1>Listado Variado</h1>
+<p>Entrega en html5 un índice con las siguientes páginas. Los ficheros de imagen, sonido o vídeo
+han de guardarse en una carpeta denominada media.</p>
+<h2>Canvas básico</h2>
+<canvas id="Cuadrado Rojo" title="Cuadradro Rojo" width="150" height="150"></canvas>
+<script type="text/javascript">
+	{
+ 	let canvas = document.getElementById("Cuadrado Rojo");
+ 	let contexto = canvas.getContext ("2d");
+ 	contexto.fillStyle = "#ff0000";
+ 	contexto.fillRect (0,0,150,150);
+ 	}
+ </script>
+
+<canvas id="Cuadrado Verde" title="Cuadradro Verde" width="100" height="100"></canvas>
+<script type="text/javascript">
+	{
+ 	let canvas = document.getElementById("Cuadrado Verde");
+ 	let contexto = canvas.getContext ("2d");
+ 	contexto.fillStyle = "#0B610B";
+ 	contexto.fillRect (0,0,150,150);
+ 	}
+ </script>
+ 
+ <canvas id="Cuadrado azul" title="Cuadradro azul" width="75" height="75"></canvas>
+<script type="text/javascript">
+	{
+ 	let canvas = document.getElementById("Cuadrado azul");
+ 	let contexto = canvas.getContext ("2d");
+ 	contexto.fillStyle = "#0000FF";
+ 	contexto.fillRect (0,0,150,150);
+ 	}
+ </script>
+
+<p>Utiliza getContext(), fillStyle y fillRect() para dibujar estos tres rectángulos de la escala
+de grises. Se mostrarán los mensajes "Rectángulo casi blanco", "Rectángulo gris" y
+"Rectángulo negro" al poner el ratón sobre ellos.</p>
+
+<canvas id="Rectangulo casi blanco" title="Rectangulo casi blanco" width="100" height="50"></canvas>
+<script type="text/javascript">
+	{
+ 	let canvas = document.getElementById("Rectangulo casi blanco");
+ 	let contexto = canvas.getContext ("2d");
+ 	contexto.fillStyle = "#F2F2F2";
+ 	contexto.fillRect (0,0,150,150);
+ 	}
+ </script>
+
+<canvas id="Rectangulo gris" title="Rectangulo gris" width="50" height="100"></canvas>
+<script type="text/javascript">
+	{
+ 	let canvas = document.getElementById("Rectangulo gris");
+ 	let contexto = canvas.getContext ("2d");
+ 	contexto.fillStyle = "#848484";
+ 	contexto.fillRect (0,0,150,150);
+ 	}
+ </script>
+
+<canvas id="Rectangulo negro" title="Rectangulo negro" width="100" height="50"></canvas>
+<script type="text/javascript">
+	{
+ 	let canvas = document.getElementById("Rectangulo negro");
+ 	let contexto = canvas.getContext ("2d");
+ 	contexto.fillStyle = "#000000";
+ 	contexto.fillRect (0,0,150,150);
+ 	}
+ </script>
+
+ <p>Utiliza beginPath(), arc(), stroke(), fillStyle y fill() para dibujar estos tres círculos.</p>
+
+ <canvas id="idCirculo"></canvas>
+ <script>
+ 	{
+ 		let circulo = document.getElementById("idCirculo").getContext("2d");
+ 		let gradiente = circulo.createLinearGradient (0, 0, 170, 0);
+ 		gradiente.addColorStop(0, "black");
+ 		gradiente.addColorStop(1, "white");
+
+ 		circulo.fillStyle = gradiente;
+ 		circulo.beginPath();
+ 		circulo.arc (100, 75, 50, 0, 2 *Math.PI);
+ 		circulo.stroke();
+ 		circulo.fill();
+ 	}
+ </script>
+
+<canvas id="myCanvas" width="578" height="200"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+      var radius = 50;
+
+      context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = 'red';
+      context.fill();
+      context.lineWidth = 5;
+      context.strokeStyle = '#FF0000';
+      context.stroke();
+    </script>
+
+    
+<table >
+  <td><a href="../video/video.html">Anterior
+
+
+</body>
+</html>
