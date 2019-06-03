@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE numeros [
+<!ELEMENT numeros (#PCDATA)>
+
+]>
+<numeros>25</numeros>
+
+
+<!-- numero no estaba declarado y habia un error el el elemento declarado-->
